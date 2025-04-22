@@ -1,0 +1,11 @@
+main/SyncStat.class
+main/SyncCommand.class
+service/ConflictResolver.class
+model/FileEntry.class
+model/Registry.class
+service/LatestWinsResolver.class
+service/SyncManager.class
+utils/FileSystemUtils.class
+main/NewProfile.class
+model/Profile.class
+ui/JSyncUI.class
