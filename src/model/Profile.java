@@ -6,7 +6,6 @@ public class Profile {
     private Path sourcePath;
     private Path targetPath;
 
-    // ✅ Obligatoire pour Jackson
     public Profile() {
     }
 

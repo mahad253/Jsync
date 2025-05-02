@@ -78,11 +78,11 @@ public class JSyncUI extends JFrame {
             Profile profile = new Profile(Path.of(source), Path.of(target));
             SyncManager manager = new SyncManager(new LatestWinsResolver());
 
-            log("🔄 Synchronisation en cours...");
+            log("Synchronisation en cours...");
             manager.synchronize(profile);
-            log("✅ Synchronisation terminée !");
+            log("Synchronisation terminée !");
         } catch (Exception e) {
-            log("❌ Erreur : " + e.getMessage());
+            log("Erreur : " + e.getMessage());
         }
     }
 

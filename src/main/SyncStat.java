@@ -41,7 +41,7 @@ public class SyncStat {
             }
 
         } catch (Exception e) {
-            System.err.println("❌ Erreur dans l'affichage des statistiques : " + e.getMessage());
+            System.err.println("Erreur dans l'affichage des statistiques : " + e.getMessage());
         }
     }
 }

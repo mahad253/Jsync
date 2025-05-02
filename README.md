@@ -1,13 +1,13 @@
 # JSync - Application de Synchronisation de Fichiers
 
-## ✨ Présentation
+## 1. Présentation
 **JSync** est une application Java permettant de synchroniser le contenu de deux répertoires (source → cible).  
 Elle fonctionne **en ligne de commande** et via une **interface graphique Swing**.  
 Elle repose sur **Java 17**, **Maven**, et utilise **Jackson** pour la gestion des fichiers JSON.
 
 ---
 
-## 🎓 Objectif Pédagogique
+## 2. Objectif Pédagogique
 Projet réalisé dans le cadre de l’UE **Architecture Logicielle**.  
 Objectifs :
 - Appliquer le modèle MVC (encapsulation, séparation des responsabilités)
@@ -18,7 +18,7 @@ Objectifs :
 
 ---
 
-## ⚙️ Technologies
+## 3. Technologies
 - Java 17
 - Maven
 - Swing
@@ -29,17 +29,17 @@ Objectifs :
 ## ♻️ Structure du projet
 ```bash
 JSYNC/
-├── pom.xml                      # Fichier Maven
-├── README.md                    # Fichier de documentation
-├── profile.json                 # Fichier de configuration généré
-├── source_mahad/                # Répertoire source (à synchroniser)
-├── target_mahad/                # Répertoire cible (synchronisé)
-├── target/                      # Répertoire de compilation Maven
+├── pom.xml                      
+├── README.md                    
+├── profile.json                 
+├── source_mahad/                
+├── target_mahad/                
+├── target/                      
 └── src/
     └── main/
         ├── main/
-        │   ├── NewProfile.java     # Création du profil
-        │   └── SyncCommand.java    # Lancement de la synchro (CLI)
+        │   ├── NewProfile.java     
+        │   └── SyncCommand.java    
         ├── model/
         │   ├── FileEntry.java
         │   ├── Profile.java
@@ -51,13 +51,13 @@ JSYNC/
         ├── utils/
         │   └── FileSystemUtils.java
         └── ui/
-            └── JSyncUI.java        # Interface graphique Swing
+            └── JSyncUI.java        # Notre interface graphique en Swing
 
 ```
 
-⚡ Compilation
+Compilation
 ```bash
-1. Dans un terminal, place-toi à la racine du projet JSYNC puis exécute :
+1. Dans un terminal, Mr vous allez vous placer à la racine du projet JSYNC puis exécutez :
 mvn clean package assembly:single
 
 2. Cela génère un JAR exécutable avec les dépendances dans :
@@ -65,7 +65,7 @@ target/jsync-1.0-SNAPSHOT-jar-with-dependencies.jar
 
 ```
 
-🚀 Exécution
+Exécution
 ```bash
 1. Interface Graphique (Swing) :
    java -cp target/jsync-1.0-SNAPSHOT-jar-with-dependencies.jar ui.JSyncUI

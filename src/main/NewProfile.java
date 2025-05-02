@@ -16,7 +16,7 @@ public class NewProfile {
 
     public static void main(String[] args) {
         if (args.length != 3 || !args[0].equalsIgnoreCase("new-profile")) {
-            System.err.println("❌ Usage : java -jar jsync.jar new-profile <source> <target>");
+            System.err.println("Usage : java -jar jsync.jar new-profile <source> <target>");
             return;
         }
 
@@ -28,12 +28,12 @@ public class NewProfile {
         System.out.println("➡️ Cible  : " + target);
 
         if (!Files.exists(source) || !Files.isDirectory(source)) {
-            System.err.println("❌ Le répertoire source est invalide ou n'existe pas.");
+            System.err.println("Le répertoire source est invalide ou n'existe pas.");
             return;
         }
 
         if (!Files.exists(target) || !Files.isDirectory(target)) {
-            System.err.println("❌ Le répertoire cible est invalide ou n'existe pas.");
+            System.err.println("Le répertoire cible est invalide ou n'existe pas.");
             return;
         }
 
@@ -44,9 +44,9 @@ public class NewProfile {
             mapper.writerWithDefaultPrettyPrinter()
                     .writeValue(new File("profile.json"), profile);
 
-            System.out.println("✅ Profil enregistré avec succès dans le fichier 'profile.json'.");
+            System.out.println("Profil enregistré avec succès dans le fichier 'profile.json'.");
         } catch (Exception e) {
-            System.err.println("❌ Erreur lors de la création du profil : " + e.getMessage());
+            System.err.println("Erreur lors de la création du profil : " + e.getMessage());
         }
     }
 }

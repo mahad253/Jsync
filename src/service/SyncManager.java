@@ -52,7 +52,7 @@ public class SyncManager {
                     System.out.println("Copié : " + targetFile);
                 }
 
-                // ✅ Correction ici : ajout de la clé et de la valeur
+                // Correction ici : ajout de la clé et de la valeur
                 registry.addEntry(entry.getKey(), entry.getValue());
             }
 

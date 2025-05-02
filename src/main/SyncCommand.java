@@ -22,18 +22,18 @@ public class SyncCommand {
             // 2. On vérifie que les dossiers existent
             if (!profile.getSourcePath().toFile().isDirectory() ||
                     !profile.getTargetPath().toFile().isDirectory()) {
-                System.err.println("❌ Les chemins source ou cible sont invalides.");
+                System.err.println("Les chemins source ou cible sont invalides.");
                 return;
             }
 
             // 3. On lance la synchronisation
             SyncManager manager = new SyncManager(new LatestWinsResolver());
-            System.out.println("🔄 Démarrage de la synchronisation...");
+            System.out.println("Démarrage de la synchronisation...");
             manager.synchronize(profile);
-            System.out.println("✅ Synchronisation terminée avec succès.");
+            System.out.println("Synchronisation terminée avec succès.");
 
         } catch (Exception e) {
-            System.err.println("❌ Erreur pendant la synchronisation : " + e.getMessage());
+            System.err.println("Erreur pendant la synchronisation : " + e.getMessage());
         }
     }
 }
