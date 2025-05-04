@@ -57,6 +57,9 @@ JSYNC/
 
 Compilation
 ```bash
+Important : Comme vous chargez le projet .zip sur univertice, alors le JAR exécutable est déjà présent. 
+Donc vous passez directement à l'exécution (bash suivant en dessous).
+
 1. Dans un terminal, Mr vous allez vous placer à la racine du projet JSYNC puis exécutez :
 mvn clean package assembly:single
 
